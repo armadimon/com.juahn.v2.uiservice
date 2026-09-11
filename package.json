@@ -1,0 +1,11 @@
+{
+  "name": "com.juahn.v2.uiservice",
+  "displayName": "UI Service",
+  "author": "armadimon",
+  "version": "0.1.0",
+  "unity": "6000.0",
+  "license": "MIT",
+  "type": "library",
+  "description": "Screen and popup lifecycle service for uGUI. Presenters are registered by type, loaded through a swappable asset loader, and opened as either a single-active UiScreen or a stacked UiPopup. Every presenter owns a LifetimeToken that is cancelled on close, so async work cannot bleed into a reused instance. Transition timing is delegated to features (ITransitionFeature), which is where the UI Motion bridge attaches. No DI container, no Addressables, no service locator. Requires UniTask to be installed as a UPM package, not under Assets.",
+  "dependencies": { "com.unity.ugui": "2.0.0" }
+}

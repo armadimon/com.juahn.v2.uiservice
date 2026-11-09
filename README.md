@@ -24,3 +24,7 @@ Install `com.juahn.v2.uimotion.uiservice` to attach lifecycle, interaction, valu
 ## Validation
 
 The IdleMine consumer has PlayMode coverage for multiple widgets, hidden children, context changes, dynamic ownership, fast navigation, canceled/late loads, external destruction, modal priorities, real prefab input and holds. Keep `.meta` files when moving a serialized MonoBehaviour. `PresenterFeatureBase` remains a presenter callback adapter over `UiFeature`, with no separate lifetime.
+
+## Package boundary validation
+
+Run `python3 Tools~/validate_package.py`. `package-policy.json` records allowed runtime assemblies, pure-core boundaries, declared dependencies and consumer-installed SDK dependencies. CI rejects unexpected references or missing Unity metadata. The existing runtime API is unchanged.

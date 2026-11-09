@@ -1,0 +1,20 @@
+{
+  "assemblies": {
+    "juahn.v2.UiService": {
+      "references": [
+        "UniTask",
+        "UnityEngine.UI",
+        "Unity.TextMeshPro"
+      ],
+      "noEngineReferences": false
+    }
+  },
+  "assemblyOwners": {
+    "Unity.TextMeshPro": "com.unity.ugui",
+    "UniTask": "com.cysharp.unitask",
+    "UnityEngine.UI": "com.unity.ugui"
+  },
+  "consumerDependencies": [
+    "com.cysharp.unitask"
+  ]
+}
